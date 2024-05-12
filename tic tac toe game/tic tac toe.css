@@ -1,0 +1,96 @@
+button {
+    height: 50px;
+    width: 50px;
+    /* margin-bottom: -1px;
+    margin-right: -1px; */
+    /* box-sizing: border-box; */
+}
+
+/* button:active {
+    transform: translateY(1px); /* смещение кнопки на 1px вниз при нажатии */
+/* } */ 
+
+.buttonTopLeft {
+    border-top: 0;
+    border-left: 0;
+    margin-right: -2.5px;
+}
+
+/* .buttonTopLeft:active{
+    margin-top: -10px;
+} */
+
+.buttonTopCenter {
+    border-top: 0;
+    margin-left: -2.5px;
+    margin-right: -2.5px;
+}
+
+.buttonTopRight {
+    border-top: 0;
+    border-right: 0;
+    margin-left: -2.5px;
+}
+
+.buttonMiddleLeft {
+    border-left: 0;
+    margin-right: -2.5px;
+}
+
+.buttonMiddleCenter {
+    border-style: solid;
+    margin-left: -2.5px;
+    margin-right: -2.5px;
+}
+
+.buttonMiddleRight {
+    border-right: 0;
+    margin-left: -2.5px;
+}
+
+.buttonLowerLeft {
+    border-left: 0;
+    border-bottom: 0;
+    margin-right: -2.5px;
+}
+
+.buttonLowerCenter {
+    border-bottom: 0;
+    margin-left: -2.5px;
+    margin-right: -2.5px;
+}
+
+.buttonLowerRight {
+    border-bottom: 0;
+    border-right: 0;
+    margin-left: -2.5px;
+}
+
+.topLine{
+    margin-bottom: -2px;
+    /* height: 50px;
+    margin-top: 0;
+    margin: 0 auto; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .topLine:active{
+    height: 50px;
+    margin: 0 auto;
+} */
+
+.middleLine{
+    margin-bottom: -2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lowerline{
+    margin-bottom: -2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
