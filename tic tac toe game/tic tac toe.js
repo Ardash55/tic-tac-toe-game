@@ -8,8 +8,16 @@ let seven;
 let eight;
 let nine;
 let comp;
-let wins = 0;
-let loses = 0;
+// let wins = localStorage.setItem('wins', JSON.stringify(0));
+let winsParse = JSON.parse(localStorage.getItem('wins'));
+// let loses = localStorage.setItem('loses', JSON.stringify(0));
+let losesParse = JSON.parse(localStorage.getItem('loses'));
+
+function displayScore() {
+    document.getElementById('wins').textContent = 'Побед: ' + winsParse + ' : ' + losesParse + ' Поражений'
+}
+
+displayScore();
 
 function compPress() {
     comp = Math.random();
@@ -154,67 +162,99 @@ function pressLowerRight() {
 function gameOver() {
     if (one == 1 & two == 1 & three == 1) {
         alert('Вы победили');
-        wins = wins + 1;
-        document.getElementById('wins').textContent = wins;
+        winsParse ++;
+        console.log(winsParse);
+        wins =  localStorage.setItem('wins', JSON.stringify(winsParse));
+        displayScore()
     } else if (one == 0 & two == 0 & three == 0) {
         alert('Вы проиграли')
-        loses = loses + 1;
-        document.getElementById('loses').textContent = loses;
+        losesParse ++;
+        console.log(losesParse);
+        loses =  localStorage.setItem('loses', JSON.stringify(losesParse));
+        displayScore()
     } else if (one == 0 & five == 0 & nine == 0) {
-        alert('Вы проиграли')
-        loses = loses + 1;
-        document.getElementById('loses').textContent = loses;
+        alert('Вы проиграли');
+        losesParse ++;
+        console.log(losesParseParse);
+        loses =  localStorage.setItem('loses', JSON.stringify(losesParse));
+        displayScore()
     } else if (one == 1 & five == 1 & nine == 1) {
-        alert('Вы победили')
-        wins = wins + 1;
-        document.getElementById('wins').textContent = wins;
+        alert('Вы победили');
+        winsParse ++;
+        console.log(winsParse);
+        wins =  localStorage.setItem('wins', JSON.stringify(winsParse));
+        displayScore()
     } else if (one == 1 & four == 1 & seven == 1) {
         alert('Вы победили');
-        wins = wins + 1;
-        document.getElementById('wins').textContent = wins;
+        winsParse ++;
+        console.log(winsParse);
+        wins =  localStorage.setItem('wins', JSON.stringify(winsParse));
+        displayScore()
     } else if (two == 1 & five == 1 & eight == 1) {
-        alert('Вы победили')
-        wins = wins + 1;
-        document.getElementById('wins').textContent = wins;
+        alert('Вы победили');
+        winsParse ++;
+        console.log(winsParse);
+        wins =  localStorage.setItem('wins', JSON.stringify(winsParse));
+        displayScore()
     } else if (three == 1 & six == 1 & nine == 1) {
-        alert('Вы победили')
-        wins = wins + 1;
-        document.getElementById('wins').textContent = wins;
+        alert('Вы победили');
+        winsParse ++;
+        console.log(winsParse);
+        wins =  localStorage.setItem('wins', JSON.stringify(winsParse));
+        displayScore()
     } else if (four == 1 & five == 1 & six == 1) {
-        alert('Вы победили')
-        wins = wins + 1;
-        document.getElementById('wins').textContent = wins;
+        alert('Вы победили');
+        winsParse ++;
+        console.log(winsParse);
+        wins =  localStorage.setItem('wins', JSON.stringify(winsParse));
+        displayScore()
     } else if (three == 1 & five == 1 & seven == 1) {
-        alert('Вы победили')
-        wins = wins + 1;
-        document.getElementById('wins').textContent = wins;
+        alert('Вы победили');
+        winsParse ++;
+        console.log(winsParse);
+        wins =  localStorage.setItem('wins', JSON.stringify(winsParse));
+        displayScore()
     } else if (seven == 1 & eight == 1 & nine == 1) {
-        alert('Вы победили')
-        wins = wins + 1;
-        document.getElementById('wins').textContent = wins;
+        alert('Вы победили');
+        winsParse ++;
+        console.log(winsParse);
+        wins =  localStorage.setItem('wins', JSON.stringify(winsParse));
+        displayScore()
     } else if (one == 0 & four == 0 & seven == 0) {
-        alert('Вы проиграли')
-        loses = loses + 1;
-        document.getElementById('loses').textContent = loses;
+        alert('Вы проиграли');
+        losesParse ++;
+        console.log(losesParse);
+        loses =  localStorage.setItem('loses', JSON.stringify(losesParse));
+        displayScore()
     } else if (two == 0 & five == 0 & eight == 0) {
-        alert('Вы проиграли')
-        loses = loses + 1;
-        document.getElementById('loses').textContent = loses;
+        alert('Вы проиграли');
+        losesParse ++;
+        console.log(losesParse);
+        loses =  localStorage.setItem('loses', JSON.stringify(losesParse));
+        displayScore()
     } else if (three == 0 & six == 0 & nine == 0) {
-        alert('Вы проиграли')
-        loses = loses + 1;
-        document.getElementById('loses').textContent = loses;
+        alert('Вы проиграли');
+        losesParse ++;
+        console.log(losesParse);
+        loses =  localStorage.setItem('loses', JSON.stringify(losesParse));
+        displayScore()
     } else if (four == 0 & five == 0 & six == 0) {
-        alert('Вы проиграли')
-        loses = loses + 1;
-        document.getElementById('loses').textContent = loses;
+        alert('Вы проиграли');
+        losesParse ++;
+        console.log(losesParse);
+        loses =  localStorage.setItem('loses', JSON.stringify(losesParse));
+        displayScore()
     } else if (three == 0 & five == 0 & seven == 0) {
-        alert('Вы проиграли')
-        loses = loses + 1;
-        document.getElementById('loses').textContent = loses;
+        alert('Вы проиграли');
+        losesParse ++;
+        console.log(losesParse);
+        loses =  localStorage.setItem('loses', JSON.stringify(losesParse));
+        displayScore()
     } else if (seven == 0 & eight == 0 & nine == 0) {
-        alert('Вы проиграли')
-        loses = loses + 1;
-        document.getElementById('loses').textContent = loses;
+        alert('Вы проиграли');
+        losesParse ++;
+        console.log(losesParse);
+        loses =  localStorage.setItem('loses', JSON.stringify(losesParse));
+        displayScore()
     }
 }
